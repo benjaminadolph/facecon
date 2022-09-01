@@ -1,0 +1,54 @@
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Cocogoose';
+    margin: 0;
+}
+
+h2 {
+    color: white;
+    font-size: 35px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    padding: 5vh;
+    font-size: 20px;
+    color: white;
+}
+
+.textcenter{
+    padding: 5vh;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.texticons{
+    font-size: 35px;
+    padding-right: 10px;
+}
+
+#guide{
+    height: auto;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    max-width: 90vw;
+    margin: auto;
+}
+
+#container{
+    display: flex;
+    align-items: center;
+}
+
+#picture{
+    height: auto;
+    padding: 5vh;
+    width: 40vw;
+    object-fit: contain;
+}
+

@@ -1,0 +1,74 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facecon - website with face controls</title>
+    <link type="text/css" rel="stylesheet" href="css/handsfree.css"/>
+    <link type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/handsfree.js"></script>
+</head>
+<body>
+    <nav id="menu">
+        <div id="mainmenu">
+            <div id="sitesmenucontainer">
+                <div class="menuinfo">
+                    <p class="menuinfotext">menu</p>
+                </div>
+                <div id="sitesmenu">
+                    <button type="button" id="site0" class="sitesbutton activatebutton" disabled onclick="toggleSite(this.id)">
+                        <i id="homeicon" class="material-icons">home</i>home
+                    </button>
+                    <button type="button" id="site1" class="sitesbutton" onclick="toggleSite(this.id)">
+                        <i id="guideicon" class="material-icons">menu_book</i>guide
+                    </button>
+                    <button type="button" id="site2" class="sitesbutton" onclick="toggleSite(this.id)">
+                        <i id="videoicon" class="material-icons">movie</i>video
+                    </button>
+                </div>
+            </div>
+            <div class="vertical-divider"></div>
+            <div id="controlscontainer" >
+                <div class="menuinfo">
+                    <p class="menuinfotext">controls</p>
+                </div>
+                <div id="controls">
+                    <button type="button" id="camerabutton" class="controlsbutton" onclick="toggleCamera(this.id)" title="Click to enable/disable the camera">
+                        <i id="cameraicon" class="material-icons">videocam</i> face controls
+                    </button>
+                    <button type="button" id="clickbutton" class="controlsbutton disablebutton" disabled onclick="toggleClick(this.id)" >
+                        <i id="clickicon" class="material-icons">touch_app</i> click
+                    </button>
+                    <button type="button" id="scrollv1button" class="controlsbutton disablebutton" disabled onclick="toggleScrollv1(this.id)">
+                        <i id="scrolliconv1" class="material-icons ">swap_vert looks_one</i> whole page
+                    </button>
+                    <button type="button" id="scrollv2button" class="controlsbutton disablebutton" disabled onclick="toggleScrollv2(this.id)">
+                        <i id="scrolliconv2" class="material-icons ">swap_vert looks_two</i> zone
+                    </button>
+                    <button type="button" id="navigationv1button" class="controlsbutton disablebutton" disabled onclick="toggleNavigatev1(this.id)">
+                        <i id="navigationiconv1" class="material-icons">code looks_one </i> wink 
+                    </button>
+                    <button type="button" id="navigationv2button" class="controlsbutton disablebutton" disabled onclick="toggleNavigatev2(this.id)">
+                        <i id="navigationiconv2" class="material-icons">code looks_two</i> roll
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="interactionhelp">
+            <p id="interactionhelptext">activate your webcam by clicking on the cameraicon</p>
+        </div>        
+    </nav>
+
+    <div id="scrollhelptop"></div>
+    <div id="scrollhelpbottom"></div>
+
+    <div id="cameracontainer"></div>
+
+    <section id="sitescontainer"></section>
+    
+    <script src="js/logic_handsfree.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html> 
